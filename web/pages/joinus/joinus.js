@@ -1,6 +1,7 @@
 $("#accordion>.panel>.panel-heading").each(function(k,v){
 //	console.log($(this))
 	var that = $(this);
+	
 	$(this).click(function(){
 //		if($(this))
 		$(this).parent().siblings(".panel").children(".panel-heading").removeClass("bg")
