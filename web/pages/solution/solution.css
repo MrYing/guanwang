@@ -25,6 +25,10 @@ img{
     background: #F5F5F5;
 	transition: all 1s ease-in-out;
 }
+.divide hr{
+    margin-top: 8px;
+    width: 100%;
+}
 .hover{
     max-width: 220px;
     height: 333px;
