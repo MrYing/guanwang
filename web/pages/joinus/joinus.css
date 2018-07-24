@@ -7,6 +7,14 @@
 img{
 	margin: 0 auto;
 }
+.default img{
+	width: 100px;
+}
+.default h3{
+	font-size: 20px;
+    font-weight: bolder;
+    color: #666;
+}
 .eng{
 	font-size: 24px;
 }
