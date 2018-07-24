@@ -1,0 +1,73 @@
+.banner{
+	background-image: url(img/banner.png);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+img{
+	margin: 0 auto;
+}
+.eng{
+	font-size: 24px;
+}
+.tips{
+	background: #2795FF;
+	border-radius: 100px;
+	font-size: 16px;
+	color: #FFFFFF;	
+    padding: 7px 32px;
+    margin-bottom: 10px;
+}
+.search input{
+    padding: 14px 40px;
+    min-width: 70%;
+    font-size: 16px;
+    height: 60px;
+    border: 1px solid #2795ff;
+}
+.search button{
+	border: none;
+	font-size: 24px;
+	color: #FFFFFF;
+	background: #2795FF;
+    padding: 12px 16px 17px 0;
+}
+.job{
+	padding: 40px 129px;
+	border: 1px solid #CCCCCC;
+}
+.job .type{
+	margin-top: 38px;
+}
+.job .type .title span{
+	margin-right: 30px;
+	font-weight: normal;
+	cursor: pointer;
+}
+.job .type .title span.current{
+	color: #2795FF;
+}
+.bg{
+	background: #2795FF;
+}
+#collapseOne .title,.job .title{
+	font-size: 20px;
+	color: #666666;
+	font-weight: bolder;
+}
+#collapseOne .des{
+	margin-left: 30px;
+	font-size: 16px;
+	color: #666666;
+	font-weight: normal;
+}
+.apply{
+	padding: 11px 34px;
+	color: white;
+	font-size: 20px;
+	
+    margin: 33px 0;
+    margin-left: 46px;
+	background: #2795FF;
+	border: none;
+}

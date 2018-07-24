@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>奥法科技</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/jquery.mCustomScrollbar.css"/>
+		<style type="text/css">
+			.chatting {
+				
+				display: flex;
+				flex-flow: column;
+			}
+			
+			.chat {
+		        background: rgba(0, 0, 0, 0.44);
+				font-size: 1.6rem;
+				flex: 1;
+				padding: 10px;
+				overflow: auto;
+			    width: 97%;
+   				max-width: 600px;
+   				margin: 0 auto;
+   				border: 1px solid white;
+			}
+			
+			.right {
+			        background: #eef1f382;
+				    float: right;
+				    margin-right: 10px;
+				    font-size: 15px;
+				    padding: 4px;
+				    border-radius: 4px;
+				    box-sizing: content-box;
+				    background-size: 100%;
+				    margin-bottom: 10px;
+				    max-width: 70%;
+				    word-wrap: break-word;
+			}
+			
+			.left {
+				float: left;
+				margin-left: 10px;
+			    background: #598e7563;
+				padding: 4px;
+				border-radius: 4px;
+				box-sizing: content-box;
+				background-size: 100%;
+				max-width: 70%;
+				margin-bottom: 10px;
+			}
+			.banner{
+				padding-top: 10px;
+			}
+		</style>
+	</head>
+	<body> 
+		<header>
+			<div class="container">
+				<nav class="navbar" role="navigation">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+						</button>
+						<!--=== Site Name ===-->
+						<div class="site-name navbar-brand" href="#">
+							<img class="img-responsive" src="images/logo4.png" />
+						</div>
+					</div>
+
+					<!-- Main Navigation menu Starts -->
+					<div class="collapse navbar-collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li >
+								<a href="index.html">官网首页</a>
+							</li>
+							<li>
+								<a href="pages/product/product.html">产品中心</a>
+							</li>
+							
+							<li>
+								<a href="pages/solution/solution.html">解决方案</a>
+							</li>
+							<li>
+								<a href="pages/joinus/joinus.html">加入我们</a>
+							</li>
+							<li>
+								<a href="pages/blog/blog.html">奥法博客</a>
+							</li>
+							<li>
+								<a href="pages/aboutus/aboutus.html">关于我们</a>
+							</li>
+							
+						</ul>
+					</div>
+					<!-- Main Navigation menu ends-->
+				</nav>
+			</div>
+		</header>
+		<section class="banner" id="banner" style="height: 768px;width: 100%;">
+			<div id="mydiv">
+				<div class="row chatting" style="margin-top: 200px;height: 400px;">
+					
+					<div id="chat" class="chat">
+						<div class="clearfix">
+							<div class="left">
+								您好,很高兴为您服务
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="row chatting">
+			        	<div class="input-group" style="width: 98%;max-width: 600px;margin: 0 auto;">
+				            <input id="searchInp" type="text" class="form-control" style="background: rgb(0,0,0);opacity: 0.6;color: white;">
+		                    <span class="input-group-btn">
+		                        <button id="searchBtn" class="btn btn-default" type="button">发送</button>
+		                    </span>
+		                    
+				        </div>
+			        </div>
+			</div>
+			
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-5">
+						<p><img src="images/logo3.png"/></p>
+						<p>ADD:北京市海淀区中关村创业大厦610</p>
+						<p>TEL:010-82826170</p>
+					</div>
+					<div class="col-sm-5" style="display: flex;">
+						<div class="text-center" style="flex: 1;">
+							<img style="width: 50%;" src="wechat.jpg" alt="微信" />
+							<p>微信</p>
+						</div>
+						<div class="text-center" style="flex:1">
+							<img style="width: 50%;" src="weibo.jpg" alt="微博" />
+							<p>微博</p>
+						</div>
+						<!--<img style="width: 30%;" src="weibo.jpg" alt="微博" />-->
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+			</div>
+			<hr />
+			<p style="margin: 0;padding-bottom: 20px;" class="text-center">版权所有 &copy;北京奥法科技有限公司 www.ofaai.com &nbsp;京ICP备17032090号</p>
+		</footer>
+		<script src="js/jquery.min.js" type="text/javascript"></script>
+		
+		
+		<script src="js/bootstrap.js" type="text/javascript"></script>
+		<script src="libs/jquery.mCustomScrollbar.js"></script>
+		<script src="libs/jquery.mCustomScrollbar.concat.min.js" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+//			window.onload = function() {
+//			    //配置
+//			    var config = {
+//			        vx: 4,	//小球x轴速度,正为右，负为左
+//			        vy: 4,	//小球y轴速度
+//			        height: 2,	//小球高宽，其实为正方形，所以不宜太大
+//			        width: 2,
+//			        count: 200,		//点个数
+//			        color: "121, 162, 185", 	//点颜色
+//			        stroke: "130,255,255", 		//线条颜色
+//			        dist: 6000, 	//点吸附距离
+//			        e_dist: 20000, 	//鼠标吸附加速距离
+//			        max_conn: 10 	//点到点最大连接数
+//			    }
+//	
+//			    //调用
+//			    CanvasParticle(config);
+//			}
+			(function($) {
+				$(window).load(function() {
+					//			$("#chat").mCustomScrollbar('scrollTo','bottom'); // 滚动到底部（垂直滚动条）
+					$("#chat").mCustomScrollbar({
+						scrollButtons: {
+							enable: true
+						}
+					});		
+					$("#chat").mCustomScrollbar("update");
+					$("#chat").mCustomScrollbar('scrollTo', 'bottom');
+				});
+					
+				$("#searchBtn").click(function(){
+					
+					var word = $("#searchInp").val().trim();
+					console.log(word)
+					if(word  == ""){
+						alert("请输入内容！")
+						return;
+					}
+					console.log(word)
+					$("#mCSB_1").find(".mCSB_container").append('<div class="clearfix"><div class="right">' + word + '</div></div>');
+
+					$.ajax({
+						type: "post",
+						url: "http://39.105.41.93:8484/smart/api/chatMachine",
+						async: true,
+						data: '{"callSign": "'+Date.parse(new Date())+'","chat": "'+word+'","user":"web","chatRole":"yonghu","tuLing":"true","intelligent":"true"}',
+						dataType: 'json',
+						contentType: 'application/json',
+						success: function(r) {
+							console.log(r)
+							if(r.result == "success"){
+								$("#mCSB_1").find(".mCSB_container").append('<div class="clearfix"><div class="left">' + r.qa[0].answer + '</div></div>');
+								
+							}else{
+							$("#mCSB_1").find(".mCSB_container").append('<div class="clearfix"><div class="left"> sorry，找不到您想问问题的答案，请换个问法</div></div>');
+								
+							}
+
+							$("#chat").mCustomScrollbar("update");
+							$("#chat").mCustomScrollbar('scrollTo', 'bottom');
+						}
+					});
+					
+					
+					
+					$("#searchInp").val(" ")
+				})
+				 $(document).keyup(function(event){  
+                  if(event.keyCode ==13){  
+                   	$("#searchBtn").click()
+                  }  
+                });   
+			})(jQuery);
+		</script>
+		<script type="text/javascript" src="js/canvas-particle.js"></script>
+	</body>
+</html>

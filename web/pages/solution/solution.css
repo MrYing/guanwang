@@ -1,0 +1,56 @@
+.banner{
+	background-image: url(img/banner.png);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 230px;
+}
+img{
+	margin: 0 auto;
+}
+
+.default{
+	cursor: pointer;
+	/*background: #F5F5F5;
+    margin-right: 20px;*/
+   padding-right: 0;
+   padding-top: 10px;
+    transition: all .5s ease-in-out;
+    /*box-shadow: 0 6px 10px 0 #6EB8FF;*/
+}
+.font{
+    max-width: 220px;
+    margin: 0 auto;
+    padding: 54px 60px 98px 60px;
+    background: #F5F5F5;
+	transition: all 1s ease-in-out;
+}
+.hover{
+    max-width: 220px;
+    max-height: 333px;
+	display: none;
+	margin: 0 auto;
+    color: white;
+    font-size: 16px;
+        padding: 23px 30px 29px 30px;
+    background: #2795FF;
+	transition: all 1s ease-in-out;
+}
+
+.default:hover .font{
+	display: none;
+}
+.default:hover .hover{
+	display: block;
+	background: #2795FF;
+	box-shadow: 1px 5px 10px 0 #6EB8FF;
+}
+.imgC{
+	 height:280px;
+     display:flex;
+     justify-content:center;
+     align-items:center;
+}
+@media (min-width: @screen-sm-min) { 
+	
+}

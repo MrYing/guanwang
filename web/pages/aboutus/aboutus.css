@@ -1,0 +1,76 @@
+
+.banner{
+	background-image: url(img/banner.png);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding-bottom: 0;
+}
+.banner .map{
+
+	/*animation:mymove 3s;
+	-webkit-animation:mymove 3s; /* Safari 和 Chrome */*/
+}
+@keyframes mymove{
+	from{transform: translateY(0);}
+	to{transform: translateY(300px);}
+}
+img{
+	margin: 0 auto;
+}
+#part3{
+	background-image: url(img/contact.png);
+    height: 501px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#part3 .title{
+	margin-top: 143px;
+	color: #FFFFFF;
+	font-size: 48px;
+	line-height: 48px;
+}
+#part3 .experience{
+	margin-top: 73px;
+	color: #FFFFFF;
+	background: #2795FF;
+	padding: 11px 34px;
+    color: white;
+    font-size: 20px;
+    /*margin: 33px 0;*/
+    margin-left: 46px;
+    background: #2795FF;
+    border: none;
+}
+#part3 a{
+	font-size: 20px;
+color: #FFFFFF;
+}
+#part5{
+	background-image: url(img/focus.png);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+}
+#part6 .bgImg{
+	background-image: url(img/bgMap.png);
+	/*width: 1167px;*/
+    height: 576px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#part6 .bgImg span{
+	font-size: 20px;
+}
+#part8{
+	height: 360px;
+}
+.default{
+	height: 200px;
+}
