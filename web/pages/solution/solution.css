@@ -27,7 +27,7 @@ img{
 }
 .hover{
     max-width: 220px;
-    max-height: 333px;
+    height: 333px;
 	display: none;
 	margin: 0 auto;
     color: white;
