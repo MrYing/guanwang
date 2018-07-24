@@ -74,3 +74,9 @@ color: #FFFFFF;
 .default{
 	height: 200px;
 }
+@media screen and (min-width: 768px) and (max-width:992px) {
+	
+	#part6 .bgImg span {
+	    font-size: 15px;
+	}
+}

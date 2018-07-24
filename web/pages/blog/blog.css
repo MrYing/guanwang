@@ -76,7 +76,7 @@
 }*/
 @media screen and (min-width:992px) and (max-width: 1200px){
 	.news .des {
-	   /*white-space: nowrap;*/
+	   white-space: nowrap;
 	    overflow: hidden;
 	    text-overflow: ellipsis;
 	    display: -webkit-box;
@@ -90,7 +90,7 @@
 }
 @media screen and (min-width: 768px) and (max-width:992px) {
 	.news .des {
-		/*white-space: nowrap;*/
+		white-space: nowrap;
 	    overflow: hidden;
 	    text-overflow: ellipsis;
 	    display: -webkit-box;
@@ -115,7 +115,7 @@
 @media screen and (max-width: 768px) {
 	
 	.news .des {
-		/*white-space: nowrap;*/
+		white-space: nowrap;
 	    overflow: hidden;
 	    text-overflow: ellipsis;
 	    display: -webkit-box;
