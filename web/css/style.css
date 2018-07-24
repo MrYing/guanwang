@@ -70,7 +70,9 @@ section{
 footer{
 	color: #999999;
 }
-
+footer hr{
+	color: #666666;
+}
 .waiter{
 	transition: all .36s cubic-bezier(0.4, 0, 0.37, 0.9);
 }
