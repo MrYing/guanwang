@@ -12,10 +12,11 @@ header{
 }
 header .container .navbar{
     background: white;
-    /*padding: 0px 40px 0px 20px;*/
+    padding: 0px 40px 0px 20px;
     z-index: 999;
     max-width: 1170px;
     margin: 0 auto;
+    border-radius: 2px;
 }
 .commonWidth{
 	width: 100%;
