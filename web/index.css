@@ -1,5 +1,5 @@
 .banner{
-	background-image: url(index/首页banner.png);
+	background-image: url(index/首页banner.jpg);
     height: 768px;
     background-repeat: no-repeat;
     background-position: center;
@@ -37,10 +37,9 @@ img{
 	margin:  0 auto;
 }
 #part5{
-	/*background-image: url(index/首页banner.png);
-    height: 768px;
+	background-image: url(index/合作伙伴.jpg);
     background-repeat: no-repeat;
-    background-position: center;*/
+    background-position: center;
    
 }
 #part5 .hImg div{

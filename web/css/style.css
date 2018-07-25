@@ -33,8 +33,8 @@ header .container .navbar{
 	background-color: #204D74;
 }
 .navbar-brand{
-	width: 160px;
-	padding:15px;
+	width: 135px;
+    padding: 12px 0px 10px 15px;
 }
 .row{
 	margin-left: 0;

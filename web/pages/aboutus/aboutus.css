@@ -1,6 +1,6 @@
 
 .banner{
-	background-image: url(img/banner.png);
+	background-image: url(img/banner.jpg);
     height: 600px;
     background-repeat: no-repeat;
     background-position: center;
@@ -20,7 +20,7 @@ img{
 	margin: 0 auto;
 }
 #part3{
-	background-image: url(img/contact.png);
+	background-image: url(img/contact.jpg);
     height: 501px;
     background-repeat: no-repeat;
     background-position: center;
@@ -48,7 +48,7 @@ img{
 color: #FFFFFF;
 }
 #part5{
-	background-image: url(img/focus.png);
+	background-image: url(img/focus.jpg);
     height: 350px;
     background-repeat: no-repeat;
     background-position: center;

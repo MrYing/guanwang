@@ -9,7 +9,20 @@
 		<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
 		<link rel="stylesheet" type="text/css" href="solution.css"/>
 		<style type="text/css">
-
+			li{list-style: none;}
+			.time-line{width:100%;margin:20px auto;position: relative;}
+			.time-line .time-box{width: 100%;margin: 0 auto;overflow: hidden;}
+			.time-line .time-box ul{overflow: hidden;position: relative;height: 255px;}
+			.time-line .time-box ul:after{content: "";background: #d2d2d2;height: 1px;width: 100%;position: absolute;left:0;top:50%;}
+			.time-line .time-box li{width:210px;float: left;padding: 10px;box-sizing: border-box;border: 1px solid #d2d2d2;position: relative; cursor: pointer;}
+			.time-line .time-box li:nth-child(2n){margin-top: 166px;}
+			.time-line .time-box li:before{content: "";border-left: 1px solid #d2d2d2;border-bottom: 1px solid #d2d2d2;position: absolute;width: 16px;height: 16px;background: #fff;   bottom: -9px; transform: rotate(-45deg);left: 50%;margin-left: -8px;}
+			.time-line .time-box li:after{content: "";width: 15px;height: 15px;background: url(img/point.png) no-repeat;position: absolute;left:50%;margin-left:-7px;bottom: 0;    bottom: -68px; z-index: 1;}
+			.time-line .time-box li:nth-child(2n):before{bottom: auto;top: -10px;transform: rotate(-225deg);}
+			.time-line .time-box li:nth-child(2n):after{bottom: auto;top:-46px;}
+			.time-line .time-box li:hover,.time-line .time-box li.active{background: #1b96ff;color:#fff;border-color: #1b96ff;}
+			.time-line .time-box li:hover:before,.time-line .time-box li.active:before{border-color: #1b96ff;background: #1b96ff;}
+			.time-line .time-box li:hover:after,.time-line .time-box li.active:after{background: url(img/point-hover.png) no-repeat;}
 		</style>
 	</head>
 	<body> 
@@ -164,7 +177,7 @@
 				</div>
 				
 			</div>
-			<div style="display: flex;" class="divide text-center">
+			<!--<div style="display: flex;margin-top: 40px;" class="divide text-center">
 				<hr/>
 				<span  class="fa fa-dot-circle-o"></span>
 				<hr>
@@ -172,17 +185,17 @@
 				<hr/>
 				<span  class="fa fa-dot-circle-o"></span> 
 				<hr/>
-			</div>
+			</div>-->
 			<div class="container">	
 				<div class="row">
-					<div class="col-sm-4 col-sm-offset-1  text-center">
+					<div class="col-xs-4 col-xs-offset-1  text-center">
 						<div class="des">
 							支持多渠道、多终端配置，进一步提升办事效率及服务水平，并建立数据留存与分析模型，提醒群众最为关切的高频次问题，从而做出针对性的服务优化。
 						</div>
 						
 					</div>
-					<div class="col-sm-2"></div>
-					<div class="col-sm-4 text-center">
+					<div class="col-xs-2"></div>
+					<div class="col-xs-4 text-center">
 						<div class="des">
 							在访客进入大厅时，智能助手会为你提供业务导览功能。普通客户或企业客户可自主根据需求选择业务办理类型，了解实时办理状况和分流建议。
 						</div>
