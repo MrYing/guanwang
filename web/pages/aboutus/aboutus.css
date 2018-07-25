@@ -33,14 +33,14 @@ img{
 }
 #part3 .experience{
 	margin-top: 73px;
-	color: #FFFFFF;
+	width: 148px;
 	background: #2795FF;
 	padding: 11px 34px;
     color: white;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,50%);
     font-size: 20px;
-    /*margin: 33px 0;*/
-    margin-left: 46px;
-    background: #2795FF;
     border: none;
 }
 #part3 a{
@@ -57,6 +57,11 @@ color: #FFFFFF;
     justify-content: center;
     align-items: center;
     padding-bottom: 0;
+}
+#part5 .title{
+    left: 50%;
+    position: relative;
+    transform: translate(-50%,50%);
 }
 #part6 .bgImg{
 	background-image: url(img/bgMap.png);

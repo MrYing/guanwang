@@ -21,15 +21,16 @@
 	left: 0;
 }
 .btnExp{
-    outline: none;
-    position: absolute;
-    display: inline-block;
-    padding: 5px 24px;
-    background: none;
+    position: fixed;
+	padding: 15px 15px 0 15px;
+ 	background-color: rgb(10, 140, 224);
     margin-top: 20px;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    top: 380px;
+    right: 30px;
+    /*left: 50%;
+    transform: translate(-50%, 50%);*/
+    /*border: 1px solid #FFFFFF;*/
 }
 
 img{
