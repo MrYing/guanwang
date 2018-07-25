@@ -10,7 +10,6 @@
 //  element.setAttribute('src', 'img/default/'+src);
 //}
 
-
 $(".imgs img").each(function(key,v){
 	$(this).mouseenter(function(){
 		var src = $(this).attr("src").replace("img/default/","");
