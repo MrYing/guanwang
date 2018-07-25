@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<link rel="stylesheet" type="text/css" href="index.css"/>
 		<link rel="stylesheet" type="text/css" href="libs/jquery.mCustomScrollbar.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/jquery.mloading.css"/>
 		<style type="text/css">
 			.chatting {
 				
@@ -166,8 +167,12 @@
 		<script src="libs/jquery.mCustomScrollbar.js"></script>
 		<script src="libs/jquery.mCustomScrollbar.concat.min.js" charset="utf-8"></script>
 		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+
 		<script src="particle/js/particles.js"></script>
 		<script src="particle/js/app.js"></script>
+
+		<script src="libs/jquery.mloading.js" type="text/javascript" charset="utf-8"></script>
+
 		<script type="text/javascript">
 //			window.onload = function() {
 //			    //配置
@@ -219,14 +224,20 @@
 						contentType: 'application/json',
 						success: function(r) {
 							console.log(r)
+//							$('#mCSB_1').mLoading("show");
+                $("#mCSB_1").find(".mCSB_container").append('<div class="clearfix"><div class="left"><img style="height:15px" src="data:image/gif;base64,R0lGODlhZwAaALMMABpw5D2H7CJ15iR25gxm4g5n4j6H7Atl4Qxm4QRg4ABe35zG/wAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/wtYTVAgRGF0YVhNUDw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkOGZkN2E3ZC04OTVhLWNiNDAtOGRkMS00NjE4NWI5OTI5YWQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjZERkU0NDM4RjJCMTFFOEEyQ0ZDMEI2QzA0QThBOTciIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjZERkU0NDI4RjJCMTFFOEEyQ0ZDMEI2QzA0QThBOTciIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MTUyOGE1N2YtM2IxMC04ZTRjLTk5NzgtMjczNWVkYzkxMjczIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOmQ4ZmQ3YTdkLTg5NWEtY2I0MC04ZGQxLTQ2MTg1Yjk5MjlhZCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgH//v38+/r5+Pf29fTz8vHw7+7t7Ovq6ejn5uXk4+Lh4N/e3dzb2tnY19bV1NPS0dDPzs3My8rJyMfGxcTDwsHAv769vLu6ubi3trW0s7KxsK+urayrqqmop6alpKOioaCfnp2cm5qZmJeWlZSTkpGQj46NjIuKiYiHhoWEg4KBgH9+fXx7enl4d3Z1dHNycXBvbm1sa2ppaGdmZWRjYmFgX15dXFtaWVhXVlVUU1JRUE9OTUxLSklIR0ZFRENCQUA/Pj08Ozo5ODc2NTQzMjEwLy4tLCsqKSgnJiUkIyIhIB8eHRwbGhkYFxYVFBMSERAPDg0MCwoJCAcGBQQDAgEAACH5BAkUAAwALAAAAABnABoAAATJkMlJq7046827/2AojmRpnmiqrmzrvnAsr8aAKMhgnEvfp74fL4gBKI5IBYAUbJaaxBHUVyEkrwTRNBraUrvexcR4vS4/4S86LV6nGYGyPOAOg991L0MgLws8bGocgUKDhAd9VwWAhHl2HYQLiVcJjIGOepCHk0iLmpeWbKFpfJwKf5+io4+GgXGmdKtTd6ypmWSJZ7JQtJm7ThJWfVm9vFq1v4USuEm6xYLPyiC+FDUFCQUDsU9cJsDe3TPi4+Tl5ufo6err7C4RACH5BAkUAAwALAAAAABnABoAAATGkMlJq7046827/2AojmRpnmiqrmzrvnAss0tdn8aAKMhgoLbbKbjAEIMkgGLJVABKRxspKpxQpSFCc0sYXaufb1EiBnOU2+0TVB572uTyJ5CuB9jysLxtzgjqaQJ6cB18hm4bB4BbBYN5HId8HotbCY5ib5GPiZRMjZmEkJqYHX+dCoKgmxqGDKEcdKd3l1R4pK9nnWu0UbZfVr9Zi10ipL69FFdJdbvFtV7PFkQ4AwUJBQOzJtNDSDPf4OHi4+Tl5ufo6TERACH5BAkUAAwALAAAAABnABoAAATLkMlJq7046827/2AojmRpnmiqrmzrvnAss0tdo/Z9GgOiIAPDKbfAEHOko60EUDifCkBSWaRQl6GrLkSAegkibZUh3nbKY0/T65V+0BL4uwwKsO+BuZiMTmv6fhoCd2wCHoCAh30fB4ReBYqIdGeLHo5eCZGSWpp7Ho2XTpCUm5ykkx2DoQqGp3tynVR1qwp5sUpxqK6yIGuObrdHE54gxCBdhGBZpsO8Yc4ivlDAy7gXRDhIOwMFCQUDtiXYM+Tl5ufo6err7O3uMREAIfkEBRQADAAsAAAAAGcAGgAABMuQyUmrvTjrzbv/YCiOZGmeaKqubOu+cCyzS12j9o3npzEgCsTAcMkZSUYeMqkTARTQqAJQYSpBVtso2/wQpGDChKv9kLud8wL0BIOpDDX2HJJ7Au58QI3O8Ncefx4CeW4Cgml8ZoodB4VgBYgckpOMHI9gCZQam5yWG46YUJGfnnaJpxuEogoCcXSLZHWwHXisAa+ysVyzuh5tj3C5ViK+c1kiX4ViFMhbxEtMJMBSwlVXJUc7ZSU+BQkFA7gz5OXm5+jp6uvs7e4wEQA7"></div></div>');
+							setTimeout(function(){
+//							  $('#mCSB_1').mLoading("hide");
 							if(r.result == "success"){
-								$("#mCSB_1").find(".mCSB_container").append('<div class="clearfix"><div class="left">' + r.qa[0].answer + '</div></div>');
+								$("#mCSB_1").find(".mCSB_container").children('div:last-child').children('div').html(r.qa[0].answer);
 								
 							}else{
 							$("#mCSB_1").find(".mCSB_container").append('<div class="clearfix"><div class="left"> sorry，找不到您想问问题的答案，请换个问法</div></div>');
 								
 							}
-
+              $("#chat").mCustomScrollbar("update");
+              $("#chat").mCustomScrollbar('scrollTo', 'bottom');
+							},1000)
 							$("#chat").mCustomScrollbar("update");
 							$("#chat").mCustomScrollbar('scrollTo', 'bottom');
 						}
