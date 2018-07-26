@@ -37,6 +37,14 @@
 .news .imgRes{
 	min-width: 85px;
 }
+.news .titleSty{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
 .news:hover{
 	background: #F5F5F5;
 	box-shadow: 0 0 10px 0 rgba(120,120,120,0.50);
