@@ -59,6 +59,9 @@ li.current{
 li.current a, ul.nav > li > a:hover {
     color: #EF8200 !important;
 }
+a{
+	text-decoration: none;
+}
 #part3{
 	background: #F8F8F8;
 	

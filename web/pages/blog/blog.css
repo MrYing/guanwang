@@ -52,6 +52,16 @@
 .detail{
 	
 }
+.detail p{
+	text-indent: 2em;
+}
+.detail .img{
+	max-width: 1008px;
+    text-align: center;
+}
+.detail .img img{
+	width: 50%;
+}
 .layout{
     /*background: #EEEEEE;*/
     background: #F8F8F8;
