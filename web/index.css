@@ -32,6 +32,9 @@
     transform: translate(-50%, 50%);*/
     /*border: 1px solid #FFFFFF;*/
 }
+.btnExp:hover{
+    background-color: rgb(6, 91, 146);
+}
 
 img{
 	margin:  0 auto;
