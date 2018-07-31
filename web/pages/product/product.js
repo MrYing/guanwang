@@ -13,7 +13,7 @@
 $(".imgs img").each(function(key,v){
 	$(this).mouseenter(function(){
 		var src = $(this).attr("src").replace("img/default/","");
-		console.log(src)
+		// console.log(src)
 		$(this).attr("src","img/hover/"+src);
 	})
 	$(this).mouseleave(function(){	

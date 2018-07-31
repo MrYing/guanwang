@@ -30,6 +30,13 @@ header .container .navbar{
 .english{
 	color: #999999;
 }
+.animated {
+	visibility: hidden;
+}
+
+.visible {
+	visibility: visible;
+}
 .navbar-toggle .icon-bar{
 	background-color: #204D74;
 }

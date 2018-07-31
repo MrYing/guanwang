@@ -59,12 +59,12 @@ img{
 .bg{
 	background: #2795FF;
 }
-#collapseOne .title,.job .title{
+.title,.job .title{
 	font-size: 20px;
 	color: #666666;
 	font-weight: bolder;
 }
-#collapseOne .des{
+.des{
 	margin-left: 30px;
 	font-size: 16px;
 	color: #666666;

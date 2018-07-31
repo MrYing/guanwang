@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="index.css" />
     <link rel="stylesheet" type="text/css" href="libs/jquery.mCustomScrollbar.css" />
     <link rel="stylesheet" type="text/css" href="libs/jquery.mloading.css" />
+		<link rel="stylesheet" href="../../css/animate.css" />
     <style type="text/css">
       .chatting {
         display: flex;
@@ -188,7 +189,8 @@
     <script src="js/bootstrap.js" type="text/javascript"></script>
     <script src="libs/jquery.mCustomScrollbar.js"></script>
     <script src="libs/jquery.mCustomScrollbar.concat.min.js" charset="utf-8"></script>
-    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="../../js/jquery.appear.js"></script>
+    <script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
 
     <script src="particle/js/particles.js"></script>
     <script src="particle/js/app.js"></script>
@@ -196,24 +198,7 @@
     <script src="libs/jquery.mloading.js" type="text/javascript" charset="utf-8"></script>
 
     <script type="text/javascript">
-      //			window.onload = function() {
-      //			    //配置
-      //			    var config = {
-      //			        vx: 4,	//小球x轴速度,正为右，负为左
-      //			        vy: 4,	//小球y轴速度
-      //			        height: 2,	//小球高宽，其实为正方形，所以不宜太大
-      //			        width: 2,
-      //			        count: 200,		//点个数
-      //			        color: "121, 162, 185", 	//点颜色
-      //			        stroke: "130,255,255", 		//线条颜色
-      //			        dist: 6000, 	//点吸附距离
-      //			        e_dist: 20000, 	//鼠标吸附加速距离
-      //			        max_conn: 10 	//点到点最大连接数
-      //			    }
-      //	
-      //			    //调用
-      //			    CanvasParticle(config);
-      //			}
+     
       (function($) {
         $(window).load(function() {
           //			$("#chat").mCustomScrollbar('scrollTo','bottom'); // 滚动到底部（垂直滚动条）
